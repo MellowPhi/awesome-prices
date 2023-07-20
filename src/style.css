@@ -3,7 +3,7 @@
 body {
     font-family: 'Lora', serif;
     margin: 0;
-    padding: 0;
+    /*width: 100vw;*/
 }
 
 header {
@@ -27,7 +27,11 @@ a {
 }
 
 main {
-    height: 50vh;
+    height: 90vh;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -37,5 +41,50 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid dodgerblue;
-    border-bottom: 1px solid dodgerblue;
+}
+
+#card-description-section {
+    max-height: 44vh;
+    width: 40vw;
+    text-align: center;
+    margin: 1rem;
+
+}
+
+#card-section {
+    /*border: 3px dotted aqua;*/
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.card {
+    max-height: inherit;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-header {
+    border-bottom: 1px solid black;
+    height: 10vh;
+    width: inherit;
+}
+
+.card-body {
+    height: 35vh;
+    width: inherit;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    margin: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
 }
