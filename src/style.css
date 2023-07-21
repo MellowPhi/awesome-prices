@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@100;300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato:wght@300&family=Lora&family=Lunasima&family=Open+Sans:wght@300&family=Roboto+Mono:wght@200&family=Roboto:wght@300;500&display=swap');
 
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin: 0;
     /*width: 100vw;*/
 }
@@ -27,7 +29,7 @@ a {
 }
 
 main {
-    height: 90vh;
+    height: 150vh;
     background-color: skyblue;
     display: flex;
     flex-direction: column;
@@ -87,4 +89,33 @@ button {
     margin: 1rem;
     padding: 0.3rem;
     border-radius: 0.2rem;
+}
+
+#comparison-table {
+    border: 1px solid darkgrey;
+    width: 80vw;
+    height: 50vh;
+    border-collapse: collapse;
+}
+thead {
+    background-color: darkgrey;
+}
+
+td, th {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+td {
+    text-align: left;
+}
+
+th {
+    text-align: left;
+    font-weight: 900;
+}
+
+h2 {
+    text-align: center;
 }
