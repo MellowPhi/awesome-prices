@@ -1,121 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato:wght@300&family=Lora&family=Lunasima&family=Open+Sans:wght@300&family=Roboto+Mono:wght@200&family=Roboto:wght@300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    margin: 0;
-    /*width: 100vw;*/
+    font-family: "Inter", sans-serif;
+}
+
+header,
+footer {
+    background: #fff;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
 }
 
 header {
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid dodgerblue;
-    padding: 10px;
-
-}
-
-nav:first-of-type {
-    border-right: 10rem;
-    padding: 1rem;
-
-}
-
-a {
-    margin: auto 1rem;
-}
-
-main {
-    height: 150vh;
-    background-color: skyblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-bottom: 1px solid rgba(1, 124, 255, 0.5);
 }
 
 footer {
-    height: 10vh;
-    padding: 1rem;
+    border-top: 1px solid rgba(1, 124, 255, 0.5);
+}
+
+footer a:first-child{
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #274867;
+    font-size: 1rem;
+}
+
+#nav-brand {
+    font-weight: 700;
+}
+
+nav a {
+    margin-left: 1.5rem;
+}
+
+
+
+/*Main section*/
+main {
+    min-height: 84vh;
+    background: #9ac1ff;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+section:first-child {
+    max-width: 40vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border-top: 1px solid dodgerblue;
-}
-
-#card-description-section {
-    max-height: 44vh;
-    width: 40vw;
     text-align: center;
-    margin: 1rem;
-
 }
 
-#card-section {
-    /*border: 3px dotted aqua;*/
-    width: 80vw;
-    height: 50vh;
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+section:nth-child(2) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
 }
 
 .card {
-    max-height: inherit;
-    width: 20vw;
+    background: #f5f5f5;
+    width: 200px;
+    height: 250px;
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-
 .card-header {
-    border-bottom: 1px solid black;
-    height: 10vh;
-    width: inherit;
+    height: 44px;
+    border-bottom: 1px solid #000;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-body {
-    height: 35vh;
-    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 5px;
 }
 
-button {
-    background-color: blue;
-    color: white;
+.card-body h3 {
+    line-height: 40px;
+}
+
+.card-body button {
+    width: 60%;
+    margin-top: 5px;
+    background: #3a86ff;
+    color: #edf6f9;
     border: none;
-    margin: 1rem;
-    padding: 0.3rem;
-    border-radius: 0.2rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-weight: 600;
 }
 
-#comparison-table {
-    border: 1px solid darkgrey;
-    width: 80vw;
-    height: 50vh;
+/*Table section*/
+
+section:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+
+table, td, th {
+    border: 1px solid #b9b9b9;
     border-collapse: collapse;
 }
-thead {
-    background-color: darkgrey;
+
+table {
+    width: 70%;
+    margin: 2.5rem;
 }
 
-td, th {
-    border: 1px solid lightgrey;
-    padding: 10px;
-    margin-right: 15px;
-}
-
+th,
 td {
+    height: 36px;
     text-align: left;
+    padding: 1rem;
 }
 
-th {
-    text-align: left;
-    font-weight: 900;
+thead th {
+    width: 17.5%;
+    background: #f5f5f5;
 }
 
-h2 {
-    text-align: center;
+tbody th {
+    background: #fff;
+    font-weight: 400;
 }
+td {
+    background: #fff;
+}
+
