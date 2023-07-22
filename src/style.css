@@ -53,13 +53,14 @@ nav a {
 /*Main section*/
 main {
     min-height: 84vh;
-    background: #9ac1ff;
+    background: linear-gradient(175deg, #1E2974, #2380C4);
+    /*background: #9ac1ff;*/
     display: flex;
     flex-direction: column;
 }
 
 
-section:first-child {
+#card-description-section {
     max-width: 40vw;
     margin: 0 auto;
     display: flex;
@@ -68,11 +69,15 @@ section:first-child {
     text-align: center;
 }
 
-h1 {
+#card-description-section h1 {
     font-size: 3rem;
     margin: 20px 0;
+    color: 	#F8F8F8;
 }
 
+#card-description-section p {
+    color: #F8F8F8;
+}
 section:nth-child(2) {
     display: flex;
     flex-direction: row;
@@ -82,14 +87,16 @@ section:nth-child(2) {
 
 .card {
     background: #f5f5f5;
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 280px;
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
+
+
 .card-header {
     height: 44px;
     border-bottom: 1px solid #000;
@@ -97,6 +104,7 @@ section:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F6F6F7;
 }
 
 .card-body {
@@ -113,9 +121,9 @@ section:nth-child(2) {
 }
 
 .card-body button {
-    width: 60%;
+    width: 80%;
     margin-top: 5px;
-    background: #3a86ff;
+    background: #2E51ED;
     color: #edf6f9;
     border: none;
     border-radius: 10px;
@@ -123,14 +131,24 @@ section:nth-child(2) {
     font-weight: 600;
 }
 
+.card-body button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    background-color: #000080;
+}
+
+
 /*Table section*/
 
-section:last-child {
+#table-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 2.5rem;
+}
+#table-section h2 {
+    color: #F8F8F8;
 }
 
 
